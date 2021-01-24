@@ -11,24 +11,24 @@ import UIKit
 open class BaseViewController: UIViewController {
     open override func viewDidLoad() {
         super.viewDidLoad()
-        
+
         setupUI()
     }
-    
+
     open override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        
+
         updateUI()
     }
-    
+
     open func setupUI() {
         // Setup UI from ViewModel
     }
-    
+
     open func applyStyle() {
         // Apply font, colors etc...
     }
-    
+
     open func updateUI() {
         // Update UI when the data is fetch, coming back from background etc
     }

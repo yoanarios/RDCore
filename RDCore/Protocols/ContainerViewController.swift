@@ -15,12 +15,11 @@ protocol ContainerViewControllerProtocol {
 
 extension ContainerViewControllerProtocol where Self: UIViewController {
     func addChildViewController(containerView: UIView) {
-        //Add to container view and setup constraints
+        // Add to container view and setup constraints
 //        containerView.addSubview(self)
-        
     }
-    
+
     func removeChildViewController() {
-        //Remove from container view and setup constraints
+        // Remove from container view and setup constraints
     }
 }

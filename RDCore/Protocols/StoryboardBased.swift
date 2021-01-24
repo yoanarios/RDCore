@@ -17,7 +17,7 @@ public protocol StoryboardBased: class {
 
 extension StoryboardBased {
     /// By default, use the storybaord with the same name as the class
-    
+
     static var storyboardName: String {
         return String(describing: self)
     }
@@ -25,14 +25,14 @@ extension StoryboardBased {
 
 // MARK: Support for instantiation from Storyboard
 public extension StoryboardBased where Self: UIViewController {
-    
+
     /// Create an instance of the initialViewController ViewController from its storyboardName `storyboardName` or `sceneIdentifier`
     /// - Returns: instance of the conforming UIViewController
     static func instantiate(isInitialViewController: Bool = false) -> Self {
         let storyboard = UIStoryboard(name: storyboardName, bundle: Bundle(for: self))
-        
+
         let viewController = isInitialViewController ? storyboard.instantiateInitialViewController() : storyboard.instantiateViewController(withIdentifier: self.sceneIdentifier)
-        
+
         guard let typedViewController = viewController as? Self else {
             fatalError("The initialViewController with name: '\(storyboardName)' is not of class '\(self)'")
         }

@@ -15,15 +15,13 @@ public protocol BaseChildViewControllerProtocol {
 }
 
 open class BaseChildViewController<ViewModelType>: BaseViewController, BaseChildViewControllerProtocol {
-    
+
     open func configure(viewModel: ViewModelType) {
         setupUI()
         applyStyle()
     }
-    
+
     open func updateView(viewModel: ViewModelType) {
         updateUI()
     }
-    
-    
 }

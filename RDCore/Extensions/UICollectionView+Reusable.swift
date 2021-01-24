@@ -9,19 +9,19 @@
 import UIKit
 
 public extension UICollectionView {
-   
+
     /// Register a NIB-Based `UICollectionViewCell` subclass (conforming to `Reusable` & `NibLoadable`)
     /// - Parameter cellType: `UICollectionViewCell` subclass to register  conforming to `NibReusable = (Reusable` & `NibLoadable`)
     final func register<T: UICollectionViewCell>(cellType: T.Type) where T: NibReusable {
         self.register(cellType.nib, forCellWithReuseIdentifier: cellType.reuseIdentifier)
     }
-    
+
     /// Register a Class-Based `UICollectionViewCell` subclass (conforming to `Reusable`)
     /// - Parameter cellType: `UICollectionViewCell` subclass to register conforming to  `Reusable`
     final func register<T: UICollectionViewCell>(cellType: T.Type) where T: Reusable {
       self.register(cellType.self, forCellWithReuseIdentifier: cellType.reuseIdentifier)
     }
-    
+
     /// Returns a reusable `UICollectionViewCell` object for the class inferred by the return-type
     /// - Parameters:
     ///   - indexPath: The index path specifying the location of the cell.
@@ -37,7 +37,6 @@ public extension UICollectionView {
         return cell
     }
 
-      
     /// Register a NIB-Based `UICollectionReusableView` subclass (conforming to `NibReusable`) as a Supplementary View (Header / Footer)
     /// - parameter supplementaryViewType: the `UIView` (`NibReusable``-conforming) subclass to register as Supplementary View
     /// - parameter elementKind: The kind of supplementary view to create.
