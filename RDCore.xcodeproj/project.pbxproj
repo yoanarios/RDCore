@@ -14,6 +14,7 @@
 		1D2EC36B25BBDC590085655D /* UICollectionView+Reusable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D2EC36A25BBDC590085655D /* UICollectionView+Reusable.swift */; };
 		1D2EC36E25BBDC660085655D /* UITableView+Reusable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D2EC36D25BBDC660085655D /* UITableView+Reusable.swift */; };
 		1D5D704425BDD02B00D0D30D /* ErrorFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D5D704325BDD02B00D0D30D /* ErrorFactory.swift */; };
+		1DBBCE3E25C7A73200C38E6D /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DBBCE3D25C7A73200C38E6D /* Coordinator.swift */; };
 		5F87DBFC250D238C00303D73 /* RDCore.h in Headers */ = {isa = PBXBuildFile; fileRef = 5F87DBFA250D238C00303D73 /* RDCore.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		5F87DC08251DA6B000303D73 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F87DC07251DA6B000303D73 /* BaseViewController.swift */; };
 		5F87DC0A251DA86800303D73 /* BaseContainerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F87DC09251DA86800303D73 /* BaseContainerViewController.swift */; };
@@ -30,6 +31,7 @@
 		1D2EC36A25BBDC590085655D /* UICollectionView+Reusable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UICollectionView+Reusable.swift"; sourceTree = "<group>"; };
 		1D2EC36D25BBDC660085655D /* UITableView+Reusable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableView+Reusable.swift"; sourceTree = "<group>"; };
 		1D5D704325BDD02B00D0D30D /* ErrorFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorFactory.swift; sourceTree = "<group>"; };
+		1DBBCE3D25C7A73200C38E6D /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
 		5F87DBF7250D238C00303D73 /* RDCore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = RDCore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5F87DBFA250D238C00303D73 /* RDCore.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RDCore.h; sourceTree = "<group>"; };
 		5F87DBFB250D238C00303D73 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -110,6 +112,7 @@
 				1D2EC36125BBDC250085655D /* NibLoadable.swift */,
 				1D2EC36425BBDC370085655D /* NibOwnerLoadable.swift */,
 				1D2EC36725BBDC4C0085655D /* Reusable.swift */,
+				1DBBCE3D25C7A73200C38E6D /* Coordinator.swift */,
 			);
 			path = Protocols;
 			sourceTree = "<group>";
@@ -282,6 +285,7 @@
 				1D2EC36825BBDC4C0085655D /* Reusable.swift in Sources */,
 				1D5D704425BDD02B00D0D30D /* ErrorFactory.swift in Sources */,
 				1D2EC36525BBDC370085655D /* NibOwnerLoadable.swift in Sources */,
+				1DBBCE3E25C7A73200C38E6D /* Coordinator.swift in Sources */,
 				1D2EC36B25BBDC590085655D /* UICollectionView+Reusable.swift in Sources */,
 				1D2EC35B25BBD6780085655D /* StoryboardBased.swift in Sources */,
 				5F87DC0A251DA86800303D73 /* BaseContainerViewController.swift in Sources */,
