@@ -11,7 +11,7 @@ Pod::Spec.new do |spec|
 
   spec.name         = "RDCore"
   spec.version      = "0.0.1"
-  spec.summary      = "A short description of RDCore."
+  spec.summary      = "Core functionality to build apps"
 
   spec.homepage     = "https://github.com/yoanarios/RDCore"
   spec.license      = { :type => "MIT", :file => "LICENSE" }
